@@ -1,6 +1,6 @@
-import './App.css';
-import DisplayMovie from './DisplayMovie';
-import './DisplayMovie.css'
+import './styles/scss/App.css'
+import DisplayMovie from './components/DisplayMovie';
+import Banner from './components/Hero';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -33,19 +33,22 @@ function App() {
   // console.log(movieArr);
 
   return (
-    <div className="App">
-      <h1>Trending</h1>
 
-      <div>
-        {
-          movieArr.map( movie => {
-            return (
-              <DisplayMovie key={movie.id} movieObj={movie} />
-            )
-          })
-        }
+      <div className="App">
+        <Banner />
       </div>
-    </div>
+      // {/* <h1>Trending</h1> */}
+
+      // {/* <div>
+      //   {
+      //     movieArr.map( movie => {
+      //       return (
+      //         <DisplayMovie key={movie.id} movieObj={movie} />
+      //         )
+      //       })
+      //     }
+      // </div> */}
+
   );
 }
 

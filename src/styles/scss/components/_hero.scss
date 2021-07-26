@@ -1,0 +1,9 @@
+@use '../utilities/' as *;
+
+.hero {
+  &__container {
+    width: 100%;
+    height: 70vh;
+    background-color: $blue;
+  }
+}
