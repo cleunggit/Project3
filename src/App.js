@@ -14,7 +14,7 @@ function App() {
 
   // running the API call once on mount
   useEffect( () => {
-    const apiKey = ''
+    const apiKey = '4799fee60bb1f4fcd88ccbf374cf3598'
   
     axios({
       url: 'https://api.themoviedb.org/3/trending/all/week',
