@@ -337,6 +337,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   z-index: 50;
+  transition: all 0.5s linear;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0) 0%, #111111 100%);
 }
 .nav__logo {
   left: 100px;
@@ -346,9 +348,15 @@ ul {
   right: 100px;
   width: 60px;
 }
+.nav-background {
+  background: #111111;
+}
 
 .trending__container {
   padding: 100px;
+}
+.trending__title {
+  margin-bottom: 30px;
 }
 
 .movie {
@@ -369,6 +377,7 @@ ul {
   z-index: 10;
 }
 .movie img {
+  border-radius: 5px;
   display: block;
   max-width: 100%;
 }
@@ -382,8 +391,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 .movie__overlay:hover {
   transition: all 0.5s ease-out;
   opacity: 1;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
 }/*# sourceMappingURL=App.css.map */

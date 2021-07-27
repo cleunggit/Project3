@@ -10,6 +10,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 50;
+  transition: all .5s linear;
+  background: linear-gradient(0deg, rgba(17,17,17,0) 0%, rgba(17,17,17,1) 100%);
 
   &__logo {
     // position: fixed;
@@ -21,5 +23,9 @@
     // position: fixed;
     right: 100px;
     width: 60px;
+  }
+
+  &-background {
+    background: rgba(17, 17, 17, 1);
   }
 }

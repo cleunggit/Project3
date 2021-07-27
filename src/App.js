@@ -2,6 +2,7 @@ import './styles/scss/App.css'
 import Navbar from './components/Navbar';
 import Banner from './components/Hero';
 import Movies from './components/Movies';
+import Footer from './components/Footer';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -37,6 +38,7 @@ function App() {
         <Navbar />
         <Banner />
         <Movies movies={movieArr} />
+        <Footer />
       </div>
 
 );

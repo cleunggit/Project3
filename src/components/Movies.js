@@ -1,13 +1,9 @@
-// import { useEffect, useState } from 'react';
-// import axios from 'axios'
-
 const Movies = (props) => {
   
   const image_URL = 'https://image.tmdb.org/t/p/original/'
 
   const { movies } = props
   // destructure the movie object
-  // const { original_title, backdrop_path, overview } = props.movieObj
 
   return (
     <section className="trending">
