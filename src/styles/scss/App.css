@@ -275,6 +275,7 @@ ul {
 }
 
 .hero {
+  padding-top: 100px;
   height: 60vh;
   background-image: linear-gradient(rgba(37, 37, 37, 0.1), #16152F), url("/src/assets/hero-image.png");
   background-size: cover;
@@ -324,4 +325,26 @@ ul {
 }
 .hero__buttons-icon {
   margin-right: 10px;
+}
+
+.nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  padding: 20px 100px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+}
+.nav__logo {
+  position: fixed;
+  left: 100px;
+  width: 70px;
+}
+.nav__user {
+  position: fixed;
+  right: 100px;
+  width: 60px;
 }/*# sourceMappingURL=App.css.map */

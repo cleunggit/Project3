@@ -1,0 +1,25 @@
+@use '../utilities/' as *;
+
+.nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  padding: 20px 100px;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+
+  &__logo {
+    position: fixed;
+    left: 100px;
+    width: 70px;
+  }
+
+  &__user {
+    position: fixed;
+    right: 100px;
+    width: 60px;
+  }
+}

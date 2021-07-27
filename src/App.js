@@ -1,6 +1,7 @@
 import './styles/scss/App.css'
 import DisplayMovie from './components/DisplayMovie';
 import Banner from './components/Hero';
+import Navbar from './components/Navbar';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -35,6 +36,7 @@ function App() {
   return (
 
       <div className="App">
+        <Navbar />
         <Banner />
       </div>
       // {/* <h1>Trending</h1> */}
