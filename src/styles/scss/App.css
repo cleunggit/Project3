@@ -278,7 +278,7 @@ ul {
   height: 60vh;
   background-image: linear-gradient(rgba(37, 37, 37, 0.1), #16152F), url("/src/assets/hero-image.png");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
 }
