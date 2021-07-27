@@ -3,7 +3,7 @@
 .hero {
   height: 60vh;
   // width: 100vw;
-  background-image: linear-gradient(rgba(0,0,0, 0.1), $blue), url('/src/assets/hero-image.png');
+  background-image: linear-gradient(rgba(37,37,37, 0.1), $blue), url('/src/assets/hero-image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,16 +38,25 @@
       outline: none;
       padding: 10px 25px;
       margin-top: 30px;
+      transition: all .3s ease-out;
     }
     
     &-play {
       margin-right: 1rem;
       background-color: $white;
+
+      &:hover {
+        background: #C0C1C0;
+      }
     }
 
     &-info {
       background-color: grey;
       color: $white;
+
+      &:hover {
+        background: #313130;
+      }
     }
 
     &-icon {
