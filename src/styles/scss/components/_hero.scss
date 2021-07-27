@@ -2,7 +2,7 @@
 
 .hero {
   padding-top: 100px;
-  height: 60vh;
+  min-height: 60vh;
   background-image: linear-gradient(rgba(37,37,37, 0.1), $blue), url('/src/assets/hero-image_v2.png');
   background-size: cover;
   background-position: center center;

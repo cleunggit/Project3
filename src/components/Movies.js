@@ -5,22 +5,33 @@ const Movies = (props) => {
   
   const image_URL = 'https://image.tmdb.org/t/p/original/'
 
+  const { movies } = props
   // destructure the movie object
-  const { original_title, backdrop_path, overview } = props.movieObj
+  // const { original_title, backdrop_path, overview } = props.movieObj
 
   return (
-        <div className="movie__item">
-          {/* <h2 className="movie__title">{original_title}</h2> */}
-          <img className="movie__poster"
-            src={`${image_URL}${backdrop_path}`}
-            alt={original_title}
-          />
-          {/* <p className="movie__overview">{overview}</p> */}
+    <section className="trending">
+      <div className="trending__container">
+        <h2 className="trending__title">Trending Now</h2>
+        <div className="movie">
+          {
+            movies.map( (movie) => {
+              return (
+                <div className="movie__container" key={movie.id}>
+                  <img className="movie__poster"
+                    src={image_URL + movie.backdrop_path}
+                    alt={movie.original_title}
+                  />
+                  <div className="movie__overlay">
+                    <p className="movie__title">{movie.title || movie.name}</p>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
-    // <div className="movie">
-    //   <div className="movie__container">
-    //   </div>
-    // </div>
+      </div>
+    </section>
   );
 };
 

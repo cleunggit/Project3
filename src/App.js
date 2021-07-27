@@ -31,26 +31,15 @@ function App() {
 
   },[])
 
-  // console.log(movieArr);
-
   return (
 
       <div className="App">
         <Navbar />
         <Banner />
-        <div className="movie">
-          {/* <h2>Trending</h2> */}
-          {
-            movieArr.map( movie => {
-              return (
-                <Movies className="movie" key={movie.id} movieObj={movie} />
-              )
-            })
-          }
-        </div>
+        <Movies movies={movieArr} />
       </div>
 
-  );
+);
 }
 
 export default App;
