@@ -1,7 +1,7 @@
 import './styles/scss/App.css'
-import DisplayMovie from './components/DisplayMovie';
-import Banner from './components/Hero';
 import Navbar from './components/Navbar';
+import Banner from './components/Hero';
+import Movies from './components/Movies';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 
@@ -38,18 +38,17 @@ function App() {
       <div className="App">
         <Navbar />
         <Banner />
+        <div className="movie">
+          {/* <h2>Trending</h2> */}
+          {
+            movieArr.map( movie => {
+              return (
+                <Movies className="movie" key={movie.id} movieObj={movie} />
+              )
+            })
+          }
+        </div>
       </div>
-      // {/* <h1>Trending</h1> */}
-
-      // {/* <div>
-      //   {
-      //     movieArr.map( movie => {
-      //       return (
-      //         <DisplayMovie key={movie.id} movieObj={movie} />
-      //         )
-      //       })
-      //     }
-      // </div> */}
 
   );
 }

@@ -339,12 +339,21 @@ ul {
   z-index: 50;
 }
 .nav__logo {
-  position: fixed;
   left: 100px;
   width: 70px;
 }
 .nav__user {
-  position: fixed;
   right: 100px;
   width: 60px;
+}
+
+.movie {
+  dIsplay: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.movie__item {
+  width: 32%;
+  position: relative;
+  width: 200px;
 }/*# sourceMappingURL=App.css.map */

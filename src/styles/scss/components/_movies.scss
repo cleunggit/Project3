@@ -1,0 +1,15 @@
+.movie {
+  dIsplay: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &__container {
+  }
+
+  &__item {
+    width: 32%;
+    position: relative;
+    width: 200px;
+  }
+
+}
