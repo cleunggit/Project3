@@ -19,6 +19,12 @@
     width: 70px;
   }
 
+  &__title {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: $orange;
+    text-shadow: 2px 2px $white, 4px 4px $pinkishred;
+  }
+
   &__user {
     // position: fixed;
     right: 100px;
@@ -26,6 +32,6 @@
   }
 
   &-background {
-    background: rgba(17, 17, 17, 1);
+    background: black;
   }
 }

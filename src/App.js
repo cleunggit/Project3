@@ -1,47 +1,43 @@
-import './styles/scss/App.css'
-import Navbar from './components/Navbar';
-import Banner from './components/Hero';
-import Movies from './components/Movies';
-import Footer from './components/Footer';
-import axios from 'axios'
-import { useEffect, useState } from 'react'
-
-
+import "./styles/scss/App.css";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Hero";
+import Movies from "./components/Movies";
+import Footer from "./components/Footer";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
   // initialize state
-  const [ movieArr, setMovieArr ] = useState([])
+  const [movieArr, setMovieArr] = useState([]);
 
   // find movies
 
   // running the API call once on mount
-  useEffect( () => {
-    const apiKey = '4799fee60bb1f4fcd88ccbf374cf3598'
-  
+  useEffect(() => {
+    const apiKey = "4799fee60bb1f4fcd88ccbf374cf3598";
+
     axios({
-      url: 'https://api.themoviedb.org/3/trending/all/week',
-      method: 'GET',
-      dataResponse: 'json',
+      url: "https://api.themoviedb.org/3/trending/all/week",
+      // url: 'https://api.themoviedb.org/3/search/movie',
+      method: "GET",
+      dataResponse: "json",
       params: {
         api_key: apiKey,
-        format: 'json',
-      }
+        format: "json",
+      },
     }).then((res) => {
       setMovieArr(res.data.results);
-    })
-
-  },[])
+    });
+  }, []);
 
   return (
-
-      <div className="App">
-        <Navbar />
-        <Banner />
-        <Movies movies={movieArr} />
-        <Footer />
-      </div>
-
-);
+    <div className="App">
+      <Navbar />
+      <Banner />
+      <Movies movies={movieArr} />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

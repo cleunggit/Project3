@@ -8,7 +8,7 @@ const Movies = (props) => {
   return (
     <section className="trending">
       <div className="trending__container">
-        <h2 className="trending__title">Trending Now</h2>
+        <h2 className="trending__title">NOW PLAYING</h2>
         <div className="movie">
           {
             movies.map( (movie) => {
@@ -20,6 +20,7 @@ const Movies = (props) => {
                   />
                   <div className="movie__overlay">
                     <p className="movie__title">{movie.title || movie.name}</p>
+                    
                   </div>
                 </div>
               )

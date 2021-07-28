@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Oi&family=Oswald&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -344,19 +345,27 @@ ul {
   left: 100px;
   width: 70px;
 }
+.nav__title {
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: #EEAC13;
+  text-shadow: 2px 2px #FFFFFF, 4px 4px #D85C37;
+}
 .nav__user {
   right: 100px;
   width: 60px;
 }
 .nav-background {
-  background: #111111;
+  background: black;
 }
 
 .trending__container {
   padding: 100px;
 }
 .trending__title {
+  font-size: 3rem;
+  color: #FFFFFF;
   margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
 }
 
 .movie {
