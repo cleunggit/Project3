@@ -4,6 +4,7 @@ import Banner from "./components/Hero";
 import Movies from "./components/Movies";
 import Footer from "./components/Footer";
 import axios from "axios";
+// import firebase from "./firebase";
 import { useEffect, useState } from "react";
 
 function App() {

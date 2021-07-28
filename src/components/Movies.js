@@ -1,4 +1,4 @@
-import { FaPlus } from 'react-icons/fa';
+import AddButton from './AddButton';
 
 const Movies = (props) => {
   
@@ -22,7 +22,7 @@ const Movies = (props) => {
                   />
                   <div className="movie__overlay">
                     <p className="movie__title">{movie.title || movie.name}</p>
-                    <button className="movie__add"><FaPlus className="movie__add-icon" /></button>
+                    <AddButton />
                   </div>
                 </div>
               )
