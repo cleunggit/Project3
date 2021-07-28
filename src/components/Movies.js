@@ -1,3 +1,5 @@
+import { FaPlus } from 'react-icons/fa';
+
 const Movies = (props) => {
   
   const image_URL = 'https://image.tmdb.org/t/p/original/'
@@ -20,7 +22,7 @@ const Movies = (props) => {
                   />
                   <div className="movie__overlay">
                     <p className="movie__title">{movie.title || movie.name}</p>
-                    
+                    <button className="movie__add"><FaPlus className="movie__add-icon" /></button>
                   </div>
                 </div>
               )
