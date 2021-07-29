@@ -18,11 +18,12 @@ A Netflix clone using the MovieDB API that displays new releases
 
 ### Screenshot
 
+![](screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Code]()
-- Live Site URL: [Preview]()
+- Solution URL: [Code](https://github.com/cleunggit/netflix-retro)
+- Live Site URL: [Preview](https://hopeful-nightingale-35991f.netlify.app/)
 
 ## Our process
 ### Pseudo Code
@@ -30,7 +31,6 @@ A Netflix clone using the MovieDB API that displays new releases
 
 // Create state items to hold data coming from the third-party API
 // - movies
-// - myList
 
 // Once the component has been loaded (mounted) call the local method (getMovies) to get a list of New Releases
 
@@ -65,7 +65,7 @@ A Netflix clone using the MovieDB API that displays new releases
 
 
 ### Wireframe
-![]()
+![](screenshots/wireframe.png)
 
 
 ### Built with
@@ -78,8 +78,11 @@ A Netflix clone using the MovieDB API that displays new releases
 ### What I learned
 
 - React Hooks
+- React Components
 - Working with RESTful APIs
 
-## Authors
+## Author
 
-Christopher Leung
+- Twitter - [@CodeLikeChris](https://www.twitter.com/CodeLikeChris)
+- LinkedIn - [Christopher Leung](https://www.linkedin.com/in/christopher-leung-55ab8840/)
+- Medium  - [@cleungdev](https://cleungdev.medium.com/)
