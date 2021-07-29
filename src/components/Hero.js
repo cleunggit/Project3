@@ -1,14 +1,11 @@
 import { FaPlay, FaInfo } from 'react-icons/fa';
-import heroImage from '../assets/hero-image.png';
 import titleImage from '../assets/hero-title.png';
 
 const Banner = () => {
 
   return (
     <section className="hero">
-        <div className="hero__image">
-            {/* <img src={heroImage} alt="Image of The Goonies movie poster" /> */}
-        </div>
+        <div className="hero__image"></div>
       <div className="hero__container">
         <div className="hero__text">
           <img src={titleImage} alt="Goonies movie title" />

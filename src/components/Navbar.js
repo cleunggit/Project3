@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
 
-import logo from '../assets/netflix-retro-logo.png';
-import profileImg from '../assets/profile-chris.png'
-
 const Navbar = () => {
 
   const [show, handleShow] = useState(false);
