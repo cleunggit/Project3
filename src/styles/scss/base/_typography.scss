@@ -1,14 +1,13 @@
 @use '../utilities/' as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Oi&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&family=Monoton&family=Oi&family=Oswald&display=swap');
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  // font-family: $font-primary;
+  
   color: $white;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -21,5 +20,4 @@ h1, h2, h3, h4 {
 
 p {
   margin: 0;
-  // font-family: $font-secondary;
 }

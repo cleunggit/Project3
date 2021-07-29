@@ -22,11 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className={`nav ${show && "nav-background"}`}>
-      {/* <img className="nav__logo" src={logo} alt="retro netflix logo" /> */}
       <h1 className="nav__title">NETFLIX</h1>
-      {/* image src Rafael Serra https://www.fael.pt/ */}
-      {/* <img className="nav__user" src={profileImg} alt="User icon" /> */}
-      <p>My List</p>
     </nav>
   )
 }
